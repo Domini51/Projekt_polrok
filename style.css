@@ -19,8 +19,6 @@ h1, h2, h3 {
     font-family: "Playfair Display", serif;
     color: #C62828;
 }
-
-/* Hlavička */
 header {
     display: flex;
     justify-content: space-between;
@@ -79,8 +77,6 @@ nav a:hover {
     background-color: #F4A61D;
     color: #2B2B2B;
 }
-
-/* Sekcie */
 section {
     scroll-margin-top: 80px;
     padding: 60px 20%;
@@ -91,8 +87,6 @@ h2 {
     text-align: center;
     margin-top: 0;
 }
-
-/* O nás */
 #o-nas ul {
     padding-left: 20px;
 }
@@ -101,7 +95,6 @@ h2 {
     margin-bottom: 5px;
 }
 
-/* Karty v menu */
 .karta {
     background-color: white;
     border-radius: 15px;
@@ -122,6 +115,28 @@ h2 {
 .karta p {
     margin: 5px 0;
 }
+.socialne-siete {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.socialne-siete a {
+    color: white;
+    font-size: 28px;
+    transition: 0.3s;
+}
+
+.socialne-siete a:hover {
+    color: #F4A61D;
+    transform: scale(1.2);
+}
+.donaska {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
 .cena {
     display: inline-block;
@@ -130,8 +145,6 @@ h2 {
     padding: 3px 12px;
     border-radius: 15px;
 }
-
-/* Hero sekcia */
 #domov {
     min-height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/pizza.jpg");
@@ -151,8 +164,20 @@ h2 {
     margin: 0 0 10px 0;
     animation: objavenie 1s ease-out;
 }
+#kontakt {
+    background-color: #470101;
+    color: #e5ccca;
+}
 
-/* Animácia nadpisu pri načítaní */
+#kontakt h2 {
+    color: #e5ccca;
+}
+
+#kontakt a {
+    color: rgb(255, 251, 237);
+}
+
+
 @keyframes objavenie {
     from {
         opacity: 0;
