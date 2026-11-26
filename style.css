@@ -10,6 +10,11 @@ body {
     line-height: 1.6;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 h1, h2, h3 {
     font-family: "Playfair Display", serif;
     color: #C62828;
@@ -78,6 +83,52 @@ nav a:hover {
 /* Sekcie */
 section {
     scroll-margin-top: 80px;
+    padding: 60px 20%;
+}
+
+h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 0;
+}
+
+/* O nás */
+#o-nas ul {
+    padding-left: 20px;
+}
+
+#o-nas li {
+    margin-bottom: 5px;
+}
+
+/* Karty v menu */
+.karta {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.karta img {
+    display: block;
+    border-radius: 10px;
+}
+
+.karta h3 {
+    font-size: 22px;
+    margin: 10px 0 5px 0;
+}
+
+.karta p {
+    margin: 5px 0;
+}
+
+.cena {
+    display: inline-block;
+    background-color: #F4A61D;
+    font-weight: 600;
+    padding: 3px 12px;
+    border-radius: 15px;
 }
 
 /* Hero sekcia */
@@ -98,4 +149,38 @@ section {
     color: white;
     font-size: 64px;
     margin: 0 0 10px 0;
+    animation: objavenie 1s ease-out;
+}
+
+/* Animácia nadpisu pri načítaní */
+@keyframes objavenie {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tlacidla {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.tlacidlo {
+    background-color: #C62828;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tlacidlo:hover {
+    background-color: #F4A61D;
+    color: #2B2B2B;
 }
